@@ -45,6 +45,7 @@ Vidarr should work with any sound driver.  It can monitor external hardware (if 
 *Save Settings *- Save all current settings in Vidarr.
 
 *Email:*
+
 *Username* - Enter the gmail username (without the @gmail.com entered) of the email account that will send the alarm message.
 
 *Password* - Enter the password for the username. ***Warning*** While Vidarr does hide your email password, it is still advisable to use an account that is specifically for the alarm, rather than a personal or business account. It is still possible to find the stored password.
@@ -107,4 +108,3 @@ This program is free software: you can redistribute it and/or modify it under th
 
 *The Name:*
 Vidarr is the name of a Norse God who is the brother of Thor.  His major role is to slay Fenrir and end Ragnarok, the Norse Armageddon.  He is associated with restoring order from chaos, and has a vow of silence - a very appropriate character to watch over your audio stream! The correct pronunciation (we think) is along the lines of VY-dr.  Lucas says "Vihh-darr" though.
-
