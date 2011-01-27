@@ -19,57 +19,55 @@ Vidarr should work with any sound driver.  It can monitor external hardware (if 
 
 ==2)   Interface:==
 
-Alarm:
+*Alarm:*
 
-On/Off - Determines whether the system is analyzing audio or not
+*On/Off* - Determines whether the system is analyzing audio or not
 
-L and R Channels - Give a visual of current audio levels on the selected audio driver.
+*L and R Channels* - Give a visual of current audio levels on the selected audio driver.
 
-Silence Threshold - Level below which the alert timer begins to count.  This is best set at just above the Noise Floor.  If set too high, it may send a false alarm during a particularly quiet song. If your system has a noticeable level of line noise, you may need to adjust it to be louder. If the audio goes back above the threshold before the alarm is triggered, it will reset the alert timer.
+*Silence Threshold* - Level below which the alert timer begins to count.  This is best set at just above the Noise Floor.  If set too high, it may send a false alarm during a particularly quiet song. If your system has a noticeable level of line noise, you may need to adjust it to be louder. If the audio goes back above the threshold before the alarm is triggered, it will reset the alert timer.
 
-Sensitivity - Gain control for the audio input into Vidarr.  Does not affect audio playback of the source.
+*Sensitivity *- Gain control for the audio input into Vidarr.  Does not affect audio playback of the source.
 
-Alert Timer - Selectable number of seconds before the alarm is triggered.  This is to prevent false alarms from small dead air breaks between songs or a DJ who might be a little slow to talk. This interim period is a "Warning Stage", indicated by the yellow light in the upper righthand corner. 15 seconds is the default, but a time of 120 seconds is advisable. It may be changed by clicking and dragging up and down, or clicking and typing the desired amount in.
+*Alert Timer* - Selectable number of seconds before the alarm is triggered.  This is to prevent false alarms from small dead air breaks between songs or a DJ who might be a little slow to talk. This interim period is a "Warning Stage", indicated by the yellow light in the upper righthand corner. 15 seconds is the default, but a time of 120 seconds is advisable. It may be changed by clicking and dragging up and down, or clicking and typing the desired amount in.
 
-Alert Repeat - Selectable number of hours before Vidarr will re-send it's alert messages. Either annoy your engineer until it gets fixed, or send once and then not again for 9999 Hours.  It may be changed by clicking and dragging up and down, or clicking and typing the desired amount in.
+*Alert Repeat* - Selectable number of hours before Vidarr will re-send it's alert messages. Either annoy your engineer until it gets fixed, or send once and then not again for 9999 Hours.  It may be changed by clicking and dragging up and down, or clicking and typing the desired amount in.
 
 
-Audio Driver - Select which audio driver to use (See Known Errors in User Guide if using  Digidesign hardware)
+*Audio Driver* - Select which audio driver to use (See Known Errors in User Guide if using  Digidesign hardware)
 
-Audio Input - Select which input from the given driver to use.
+*Audio Input* - Select which input from the given driver to use.
 
-Silence Elapsed - When the Alarm has been triggered, the alert timer begins counting.  This window displays the number of seconds that the warning stage has been active. When the alarm has been triggered, it continues counting, but turns red.
+*Silence Elapsed *- When the Alarm has been triggered, the alert timer begins counting.  This window displays the number of seconds that the warning stage has been active. When the alarm has been triggered, it continues counting, but turns red.
 
-Status Lights - In the upper right hand corner, three lights indicate the status of the alarm.  Green, or Normal, means that the audio is above the threshold.  Yellow, or Warning, means that audio is below the threshold, and the alert timer is counting to prepare to send an alarm. Red, or Alarm Sent, means that the staition has has been below the threshold for the given time, and has sent the error message.
+*Status Lights* - In the upper right hand corner, three lights indicate the status of the alarm.  Green, or Normal, means that the audio is above the threshold.  Yellow, or Warning, means that audio is below the threshold, and the alert timer is counting to prepare to send an alarm. Red, or Alarm Sent, means that the staition has has been below the threshold for the given time, and has sent the error message.
 
-Save Settings - Save all current settings in Vidarr.
+*Save Settings *- Save all current settings in Vidarr.
 
-Email:
-Username - Enter the gmail username (without the @gmail.com entered) of the email account that will send the alarm message.
+*Email:*
+*Username* - Enter the gmail username (without the @gmail.com entered) of the email account that will send the alarm message.
 
-Password - Enter the password for the username. ***Warning*** While Vidarr does hide your email password, it is still advisable to use an account that is specifically for the alarm, rather than a personal or business account. It is still possible to find the stored password.
+*Password* - Enter the password for the username. ***Warning*** While Vidarr does hide your email password, it is still advisable to use an account that is specifically for the alarm, rather than a personal or business account. It is still possible to find the stored password.
 
-To - Enter in the email address that the alarm will be sent to. Separate multiple addresses with a comma and space. You can also enter in phone SMS.  For example, you might send an email to 2175551234@phonecarrier.net, and it would send the alert as a text message to your phone.
+*To* - Enter in the email address that the alarm will be sent to. Separate multiple addresses with a comma and space. You can also enter in phone SMS.  For example, you might send an email to 2175551234@phonecarrier.net, and it would send the alert as a text message to your phone.
 
 For a list of phone providers' SMS addresses, see http://www.makeuseof.com/tag/email-to-sms/ 
 
-****User David Buell noted that AT&T currently does not seem to allow sending messages from an email client to the iPhone. After some testing, I found similar results. Not much can be done on Vidarr's end to fix that.
+_User David Buell noted that AT&T currently does not seem to allow sending messages from an email client to the iPhone. After some testing, I found similar results. Not much can be done on Vidarr's end to fix that._
 
-Subject & Body - C'mon, you've sent email before, right?  Enter your alert message here.  If you are running Vidarr on multiple stations, you may want to specialize this to indicate which one is down.
+*Subject & Body* - C'mon, you've sent email before, right?  Enter your alert message here.  If you are running Vidarr on multiple stations, you may want to specialize this to indicate which one is down.
 
-Send - send an email without triggering the alarm.  A good way to test the system.
+*Send* - send an email without triggering the alarm.  A good way to test the system.
 
-Clear - clear all entered data in the email settings.
-
-Terminal:
+*Terminal:*
 The Terminal area is just like typing commands into Terminal on OS X.  This makes it possible for Vidarr to launch applescripts and other software in the case of a silence trigger.  The button in the upper left is a way to manually launch the script.
 --------
 
 ==3)   Known Errors:==
 
-MBox Problems - Vidarr was built in MaxMSP, which seems to have trouble interfacing with the digidesign hardware.  Currently, it will crash if the Digi CoreAudio driver is used.  To get the system to accept it, close all audio devices, and then open the "Audio Midi Setup" preference pane on your Mac. Select the Digi CoreAudio driver device. Click the gear at the bottom of the pane, and select "Use this device for sound input."  Close the pane, and go back to Vidarr. Select the CoreAudio Built-in Output as the driver, and the Digidesign hardware as the Input.  The system should monitor your audio now.
+*MBox Problems* - Vidarr was built in MaxMSP, which seems to have trouble interfacing with the digidesign hardware.  Currently, it will crash if the Digi CoreAudio driver is used.  To get the system to accept it, close all audio devices, and then open the "Audio Midi Setup" preference pane on your Mac. Select the Digi CoreAudio driver device. Click the gear at the bottom of the pane, and select "Use this device for sound input."  Close the pane, and go back to Vidarr. Select the CoreAudio Built-in Output as the driver, and the Digidesign hardware as the Input.  The system should monitor your audio now.
 
-Email - Unfortunately, we were only able to get Vidarr to use gmail to send messages.  Neither of the creators of Vidarr are programmers by nature, and so Vidarr uses a patcher written by Cycling 74 forums member Myer Nore.  It can be found at http://cycling74.com/forums/topic.php?id=12360#post-66651 
+*Email* - Unfortunately, we were only able to get Vidarr to use gmail to send messages.  Neither of the creators of Vidarr are programmers by nature, and so Vidarr uses a patcher written by Cycling 74 forums member Myer Nore.  It can be found at http://cycling74.com/forums/topic.php?id=12360#post-66651 
 
 Hopefully, Universal Email ability will be added in the future. It should be possible.
 --------
@@ -107,8 +105,6 @@ Vidarr is inspired by the Pira.cz Silence Detector, a feature-loaded silence det
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 2 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details: http://creativecommons.org/licenses/GPL/2.0
 
-The Name:
+*The Name:*
 Vidarr is the name of a Norse God who is the brother of Thor.  His major role is to slay Fenrir and end Ragnarok, the Norse Armageddon.  He is associated with restoring order from chaos, and has a vow of silence - a very appropriate character to watch over your audio stream! The correct pronunciation (we think) is along the lines of VY-dr.  Lucas says "Vihh-darr" though.
-
-
 
