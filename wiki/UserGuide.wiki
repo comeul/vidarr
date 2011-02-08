@@ -1,4 +1,4 @@
-#summary User Guide included with version 1.6
+#summary Latest Version of the User Guide
 #labels Featured
 
 =Vidarr User Guide=
@@ -14,7 +14,7 @@
 ==1)   Purpose:==
 Vidarr is a Silence Alarm for radio stations that broadcast 24 hours a day.  It listens to a user-selected audio driver, and sends an email or SMS message if the sound levels fall below a threshold for a selectable amount of time.  This way, a station staff member can know that there is dead air, and can remedy the problem.
 
-Vidarr should work with any sound driver.  It can monitor external hardware (if you use and external mixing board) or internal sound (through soundflower).  If you are using a Digidesign M-Box or other hardware, check the Known Errors section to learn how to set it up.
+Vidarr should work with any sound driver.  It can monitor external hardware (if you use and external mixing board) or internal sound (through soundflower).  If you are using Digidesign audio hardware, or routing through the OS X HAL (Hardware Abstraction Layer) you may have some trouble getting it to register in Vidarr. There is an easy workaround though, go to the 
 --------
 
 ==2)   Interface:==
@@ -64,16 +64,27 @@ _User David Buell noted that AT&T currently does not seem to allow sending messa
 The Terminal area is just like typing commands into Terminal on OS X.  This makes it possible for Vidarr to launch applescripts and other software in the case of a silence trigger.  The button in the upper left is a way to manually launch the script.
 --------
 
-==3)   Known Errors:==
+==3) Tips & Tricks:==
 
-*MBox Problems* - Vidarr was built in MaxMSP, which seems to have trouble interfacing with the digidesign hardware.  Currently, it will crash if the Digi CoreAudio driver is used.  To get the system to accept it, close all audio devices, and then open the "Audio Midi Setup" preference pane on your Mac. Select the Digi CoreAudio driver device. Click the gear at the bottom of the pane, and select "Use this device for sound input."  Close the pane, and go back to Vidarr. Select the CoreAudio Built-in Output as the driver, and the Digidesign hardware as the Input.  The system should monitor your audio now.
+*Routing Undetectable Audio:*
+If you are using the OS X HAL option in Radiologik, or using Digidesign hardware, Vidarr probably won't be able to find the correct drivers in it's selection menu. This is partially due to MaxMSP (Vidarr's build language) and the tricky nature that Digidesign hardware exhibits in it's interactions with it. Have no fear though! It's easy to create a channel for you to monitor, especially if you are using Nicecast.
+
+  #) Download Soundflower at http://cycling74.com/products/soundflower/
+  #) Run Soundflowerbed. Set the 2 Channel Soundflower to "None". This will prevent the music from playing over your computer speakers.
+  #) In your Nicecast Effects pane, Add an "Auxillary Device Output" plugin. 
+  #) Route your music into Soundflower (2 Channel)
+  #) Set Vidarr to detect the Audio in Soundflower (2 Channel)
+  #) Enjoy!
+
+
+==4)   Known Errors:==
 
 *Email* - Unfortunately, we were only able to get Vidarr to use gmail to send messages.  Neither of the creators of Vidarr are programmers by nature, and so Vidarr uses a patcher written by Cycling 74 forums member Myer Nore.  It can be found at http://cycling74.com/forums/topic.php?id=12360#post-66651 
 
 Hopefully, Universal Email ability will be added in the future. It should be possible.
 --------
 
-==4)   Screensharing==
+==5)   Screensharing==
 
 One of the great things about using OSX is that it has a built-in Screensharing application.  It is in the HD>System>Library>CoreServices folder.  For instructions on using it, go to http://reviews.cnet.com/8301-13727_7-10329122-263.html
 
@@ -81,7 +92,7 @@ Using Screensharing, you can use a Mac at home to login remotely to your studio 
 --------
 
 
-==5)   Changelog==
+==6)   Changelog==
 
 March, 2010 - 1.0 through 1.4 - Test Versions used at WIDB
 April 1, 2010 - 1.4.5 - Public Release
@@ -89,7 +100,7 @@ April 2, 2010 - 1.5B - Added Terminal Commands
 Jan 25, 2011 - 1.6 - Added Password Protection, Added Savable Settings, Minor changes to UI and Tooltips
 
 
-==6)   Credits/Contact==
+==7)   Credits/Contact==
 Vidarr was created by Josh Gumiela and Lucas McCallister, two students at Southern Illinois University Carbondale.  It was coded in MaxMSP, a visual Programming language by Cycling74.  Lucas conceptualized the idea after seeing Josh do a presentation on MaxMSP.  Josh did most of the hard work, finding the email patcher and building the main logic for the initial system.  Lucas added minor features and developed the UI,  terminal commands, and savable settings, and beta testing.
 
 The email feature of Vidarr is a patcher made by Cycling74 Forums user Myer Nore.  It can be found in this thread: http://cycling74.com/forums/topic.php?id=12360#post-66651
