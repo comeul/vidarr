@@ -6,6 +6,7 @@
 
   # Purpose
   # Interface
+  # Tips & Tricks
   # Known Errors
   # Screensharing on Mac to solve errors
   # Changelog
