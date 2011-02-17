@@ -9,7 +9,6 @@
   # Tips & Tricks
   # Known Errors
   # Screensharing on Mac to solve errors
-  # Changelog
   # Credits/Contact
 
 ==1)   Purpose:==
@@ -39,6 +38,8 @@ Vidarr should work with any sound driver.  It can monitor external hardware (if 
 
 *Audio Input* - Select which input from the given driver to use.
 
+*Left and Right Channels* - Select which input channels to use for monitoring. This may come in handy for users who use 16 channel Soundflower or if the default 1 and 2 are not the main inputs.
+
 *Silence Elapsed *- When the Alarm has been triggered, the alert timer begins counting.  This window displays the number of seconds that the warning stage has been active. When the alarm has been triggered, it continues counting, but turns red.
 
 *Status Lights* - In the upper right hand corner, three lights indicate the status of the alarm.  Green, or Normal, means that the audio is above the threshold.  Yellow, or Warning, means that audio is below the threshold, and the alert timer is counting to prepare to send an alarm. Red, or Alarm Sent, means that the staition has has been below the threshold for the given time, and has sent the error message.
@@ -49,7 +50,7 @@ Vidarr should work with any sound driver.  It can monitor external hardware (if 
 
 *Username* - Enter the gmail username (without the @gmail.com entered) of the email account that will send the alarm message.
 
-*Password* - Enter the password for the username. ***Warning*** While Vidarr does hide your email password, it is still advisable to use an account that is specifically for the alarm, rather than a personal or business account. It is still possible to find the stored password.
+*Password* - Enter the password for the username. _*Warning*_ While Vidarr does hide your email password, it is still advisable to use an account that is specifically for the alarm, rather than a personal or business account. It is still possible to find the stored password.
 
 *To* - Enter in the email address that the alarm will be sent to. Separate multiple addresses with a comma and space. You can also enter in phone SMS.  For example, you might send an email to 2175551234@phonecarrier.net, and it would send the alert as a text message to your phone.
 
@@ -93,15 +94,7 @@ Using Screensharing, you can use a Mac at home to login remotely to your studio 
 --------
 
 
-==6)   Changelog==
-
-March, 2010 - 1.0 through 1.4 - Test Versions used at WIDB
-April 1, 2010 - 1.4.5 - Public Release
-April 2, 2010 - 1.5B - Added Terminal Commands
-Jan 25, 2011 - 1.6 - Added Password Protection, Added Savable Settings, Minor changes to UI and Tooltips
-
-
-==7)   Credits/Contact==
+==6)   Credits/Contact==
 Vidarr was created by Josh Gumiela and Lucas McCallister, two students at Southern Illinois University Carbondale.  It was coded in MaxMSP, a visual Programming language by Cycling74.  Lucas conceptualized the idea after seeing Josh do a presentation on MaxMSP.  Josh did most of the hard work, finding the email patcher and building the main logic for the initial system.  Lucas added minor features and developed the UI,  terminal commands, and savable settings, and beta testing.
 
 The email feature of Vidarr is a patcher made by Cycling74 Forums user Myer Nore.  It can be found in this thread: http://cycling74.com/forums/topic.php?id=12360#post-66651
