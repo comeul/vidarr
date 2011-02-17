@@ -2,7 +2,7 @@
 #labels Featured
 =Changelog=
 
-==Feb XX, 2011 (1.6.5)==
+==Feb 17, 2011 (1.6.5)==
   * Added more system messages to appear in Max Window
   * Added ability to select audio channels for multi-input devices
   * Changed On/Off function so that audio drivers may be monitored without sending alerts
@@ -15,6 +15,7 @@
   * Added Password Protection
   * Added Savable Settings
   * Minor changes to UI and Tooltips
+  * Made Gain control able to increase volume by 2x
 
 ==April 2, 2010 (1.5B)==
   * Added Terminal Commands
