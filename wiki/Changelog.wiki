@@ -8,6 +8,7 @@
   * Changed On/Off function so that audio drivers may be monitored without sending alerts
   * Settings Panels now are red when Vidarr is off
   * Minor changes to Email UI in prep for SMTP Settings
+  * Threshold Marker is Thicker
   * Reorganized Max Patcher layout
 
 ==Jan 25, 2011 (1.6)==
