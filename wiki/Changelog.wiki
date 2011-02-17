@@ -1,0 +1,24 @@
+#summary List of changes by date of release
+=Changelog=
+
+==Feb XX, 2011 (1.6.5)==
+  * Added more system messages to appear in Max Window
+  * Added ability to select audio channels for multi-input devices
+  * Changed On/Off function so that audio drivers may be monitored without sending alerts
+  * Settings Panels now are red when Vidarr is off
+  * Minor changes to Email UI in prep for SMTP Settings
+  * Reorganized Max Patcher layout
+
+==Jan 25, 2011 (1.6)==
+  * Added Password Protection
+  * Added Savable Settings
+  * Minor changes to UI and Tooltips
+
+==April 2, 2010 (1.5B)==
+  * Added Terminal Commands
+
+==April 1, 2010 (1.4.5)==
+  * Public Release
+
+==March 2010 (1.0-1.4)==
+  * First versions of Vidarr created and tested at WIDB.net
