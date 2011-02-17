@@ -77,7 +77,7 @@ If you are using the OS X HAL option in Radiologik, or using Digidesign hardware
   #) Route your music into Soundflower (2 Channel)
   #) Set Vidarr to detect the Audio in Soundflower (2 Channel)
   #) Enjoy!
-
+--------
 
 ==4)   Known Errors:==
 
