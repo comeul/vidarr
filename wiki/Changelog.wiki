@@ -1,4 +1,5 @@
 #summary List of changes by date of release
+#labels Featured
 =Changelog=
 
 ==Feb XX, 2011 (1.6.5)==
