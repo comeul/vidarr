@@ -2,6 +2,10 @@
 #labels Featured
 =Changelog=
 
+==Next Release (1.7)==
+  * Minor Color tweaks to UI
+  * Universal Email access through SMTP (in progress)
+
 ==Feb 17, 2011 (1.6.5)==
   * Fixed Glitch where settings wouldn't reload after computer reboot
   * Added more system messages to appear in Max Window
