@@ -2,7 +2,7 @@
 #labels Featured
 
 =Vidarr User Guide=
-*For Version 1.6.5*
+*For Version 1.6.6*
 
   # Purpose
   # Interface
