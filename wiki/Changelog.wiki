@@ -3,6 +3,8 @@
 =Changelog=
 
 ==Next Release (2.0)==
+Planning for Summer of 2011 Release
+
   * Minor Color tweaks to UI
   * Universal Email access through SMTP (in progress)
   * Repeater Function can be Disabled
