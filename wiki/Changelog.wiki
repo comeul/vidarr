@@ -6,7 +6,9 @@
   * Minor Color tweaks to UI
   * Universal Email access through SMTP (in progress)
   * Repeater Function can be Disabled
-  * Vidarr reports the timing of messages in the Max Window (in progress)
+  * Alarm Trigger and Normal statuses are now displayed in the Max Window
+  * Max Window displays the date & time of messages for tracking purposes
+  * Max Window messages are saved to an external log file
 
 ==Feb 26,2010 (1.6.6)==
   * Fixed Email (Broken in 1.6.5, missed due to lack of testing old features)
