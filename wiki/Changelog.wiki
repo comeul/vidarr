@@ -4,9 +4,12 @@
 
 ==Next Release (2.0)==
 Planning for Summer of 2011 Release
-
-  * Minor Color tweaks to UI
   * Universal Email access through SMTP (in progress)
+
+==April 9, 2011 (1.7b)
+
+  * TESTING of some Email functions. Probably non-functional for most. 
+  * Minor Color tweaks to UI
   * Repeater Function can be Disabled
   * Alarm Trigger and Normal statuses are now displayed in the Max Window
   * Max Window displays the date & time of messages for tracking purposes
