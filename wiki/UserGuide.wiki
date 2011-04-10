@@ -95,11 +95,14 @@ Using Screensharing, you can use a Mac at home to login remotely to your studio 
 
 
 ==6)   Credits/Contact==
-Vidarr was created by Josh Gumiela and Lucas McCallister, two students at Southern Illinois University Carbondale.  It was coded in MaxMSP, a visual Programming language by Cycling74.  Lucas conceptualized the idea after seeing Josh do a presentation on MaxMSP.  Josh did most of the hard work, finding the email patcher and building the main logic for the initial system, released publicly as 1.4.5. Lucas has handled most of the development since then.
+Vidarr was created by Josh Gumiela and Lucas McCallister, two students at Southern Illinois University Carbondale.  It was coded in MaxMSP, a visual Programming language by Cycling74.  Lucas conceptualized the idea after seeing Josh do a presentation on MaxMSP.  Josh did most of the hard work, finding the email patcher and building the original logic, polished by Lucas and released publicly as 1.4.5. Lucas has handled most of the development since then.
 
 The email feature of Vidarr is a patcher made by Cycling74 Forums user Myer Nore.  It can be found in this thread: http://cycling74.com/forums/topic.php?id=12360#post-66651
 
 The Terminal Commands were an idea by Radiologik Forums user Lane.  It was implemented using the aka.shell object created by Masayuki Akamatsu at http://www.iamas.ac.jp/~aka/max/
+
+Special Thanks go to Beta Testers:
+Lane, Jay, Snowman, and Udo from the Radiologik Forums
 
 Questions or Comments about Vidarr can be sent to:
 Lucas McCallister - feedback@sunnysidesound.com
