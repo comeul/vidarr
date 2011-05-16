@@ -6,7 +6,7 @@
 Planning for Summer of 2011 Release
   * Universal Email access through SMTP (in progress)
 
-==April 9, 2011 (1.7b)
+==April 9, 2011 (1.7b)==
 
   * TESTING of some Email functions. Probably non-functional for most. 
   * Minor Color tweaks to UI
