@@ -70,19 +70,16 @@ public class MXJGmail3 extends MaxObject
 
         try {
             // Get a mail Session object
-            // Pass SMTP properties to private constructor of new
-            // Session object
+            // Pass SMTP properties to private constructor of new Session object
             //Session session = Session.getDefaultInstance(props);
             Session session = Session.getInstance(props);
 
-            // Deal with transport directly because of TLS & SSL
-            // which are required for gmail
+            // Deal with transport directly because of TLS & SSL which are required for gmail
             Transport transport = session.getTransport();
             // Create a new Message object
             MimeMessage message = new MimeMessage(session);
 
-            // Pass the Mail Session as an argument and construct
-            // a MimeMessage with the Session. Populate Message object
+            // Pass the Mail Session as an argument and construct a MimeMessage with the Session. Populate Message object
             if (from != "nobody") {
                 message.setFrom( new InternetAddress(from));
             } else {
@@ -104,8 +101,7 @@ public class MXJGmail3 extends MaxObject
             // Create message body part
             BodyPart messageBodyPart = new MimeBodyPart();
 
-            // Specify that we want a Part interface for a new MIME object; 
-            // construct object and assign it to messageBodyPart
+            // Specify that we want a Part interface for a new MIME object; construct object and assign it to messageBodyPart
             if (text != null) {
                 messageBodyPart.setText(text);
             }
@@ -120,9 +116,7 @@ public class MXJGmail3 extends MaxObject
             // Create the attachment body part
             messageBodyPart = new MimeBodyPart();
 
-            // pass the BodyPart to the addBodyPart() method of the
-            // Multipart object so it can be added;
-            // insert the multipart into the message
+            // pass the BodyPart to the addBodyPart() method of the Multipart object so it can be added;insert the multipart into the message
             message.setContent(multipart);
 
             // send the message with mail transport object
